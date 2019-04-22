@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="username：" />
+
+        <!--
+        <EditText
+            android:id="@+id/user_name"
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#000000"
+            android:background="@drawable/myedit_style"
+            android:hint="账号" />
+-->
+        <com.example.syydnrycx.sqlitelogin.Class.ClearEditText
+            android:id="@+id/user_name"
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:drawableLeft="@drawable/user_name"
+            android:drawablePadding="6dp"
+            android:hint="name_tip"
+            android:singleLine="true"
+            android:background="@drawable/myedit_style" >
+            <requestFocus />
+        </com.example.syydnrycx.sqlitelogin.Class.ClearEditText>
+
+        <ImageButton
+            android:id="@+id/user_btn_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/lg_down"
+            android:paddingRight="2dip"
+            android:scaleType="fitXY" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="password：" />
+
+        <EditText
+            android:id="@+id/user_pass"
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:background="@drawable/myedit_style"
+            android:layout_marginLeft="5dp"
+            android:hint="password" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="Phone Number：" />
+
+        <EditText
+            android:id="@+id/ed_phone"
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/myedit_style"
+            android:hint="phone number" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="Verification Code：" />
+
+        <EditText
+            android:id="@+id/ed_code"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@drawable/myedit_style"
+            android:layout_marginLeft="5dp"
+            android:hint="verification code" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bt_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/mybutton_style"
+            android:text="Login IN" />
+
+        <Button
+            android:id="@+id/bt_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:background="@drawable/mybutton_style"
+            android:text="Registration" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bt_getphonecore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/mybutton_style"
+            android:text="Get verification code" />
+        <Button
+            android:id="@+id/bt_corelogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/mybutton_style"
+            android:text="Verification code login" />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

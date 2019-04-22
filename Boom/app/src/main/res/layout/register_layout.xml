@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="sign up"
+        android:textSize="35sp"
+        android:textColor="#000000"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/add"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"/>
+
+        <EditText
+            android:id="@+id/usernameRegister"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="username"
+            android:textSize="25sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/secret"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"/>
+
+        <EditText
+            android:id="@+id/passwordRegister"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="password"
+            android:textSize="25sp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/Register"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/confirm"/>
+</LinearLayout>
